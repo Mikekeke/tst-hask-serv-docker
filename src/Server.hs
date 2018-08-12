@@ -15,7 +15,8 @@ startServer = do
     let port = 3000
     putStrLn $ "Listening on port " ++ show port
     run port app
- 
+
+    -- test
 app req respond = case pathInfo req of
         ["1"] ->  respond $ getFromStorage 1
         ["2"] ->  respond $ getFromStorage 2
